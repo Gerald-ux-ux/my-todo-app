@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const Today = () => {
-  return (
-    <div>Today</div>
-  )
-}
 
-export default Today
+const Today = ({ newTask, setNewTask, addTask }) => {
+    return(
+
+      <form>
+        
+      </form>
+    )
+  }
+  
+  export default Today;
