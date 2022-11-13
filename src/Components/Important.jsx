@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Important = () => {
+const Important = (response) => {
   return (
-    <div>Important</div>
+    <div>
+      Important
+      title: {response.title}
+      status: {response.status}
+    </div>
   )
 }
 

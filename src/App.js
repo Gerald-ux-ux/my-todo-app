@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
@@ -8,6 +8,10 @@ import Important from './Components/Important';
 import Completed from './Components/Completed';
 
 function App() {
+
+const [response, setResponse] = useState({});
+
+
   return (
     <div className="App">
       <>
@@ -16,8 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/today" element={<Today />} />
-            <Route path="/important" element={<Important />} />
+            <Route path="/today" element={<Today setResponse={setResponse}/>} />
+            <Route path="/important" element={<Important response={response}  />} />
             <Route path="/completed" element={<Completed />} />
           </Routes>
         </div>
