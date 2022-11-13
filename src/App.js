@@ -6,7 +6,6 @@ import Home from './Components/Home';
 import Today from './Components/Today';
 
 function App() {
-
   return (
     <div className="App">
       <>

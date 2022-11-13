@@ -13,8 +13,7 @@ const ToDo = ({ toDo, markDone, setUpdateData, deleteTask, setResponse, sendRequ
 
   const navigate = useNavigate({ setResponse });
   const afterClick = () => {
-    navigate("/important")
-    sendRequest().then(setResponse)
+    alert("important")
   }
 
 
