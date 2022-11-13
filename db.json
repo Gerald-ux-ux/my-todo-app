@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": "100",
-      "title": "Get a gift for Valentines",
-      "important": false,
-      "completed": false
-    },
-    {
       "id": "1",
       "title": "Go and watch Wakanda",
       "important": false,

@@ -45,11 +45,17 @@ const Today = () => {
       method: 'DELETE'
     })
       .then(res => res.json())
-      .then(data => {
+      .then(newTasks => {
         setToDo(newTasks);
-      }
-      )
+        window.location.reload();
+      })
   }
+
+
+
+
+
+
   const markDone = (id) => {
     let newTask = toDo.map(task => {
       if (task.id === id) {
