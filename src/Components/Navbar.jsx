@@ -14,12 +14,6 @@ const Navbar = () => {
                 <li>
                     <CustomLink to='/today' className='NavLinks'>TODAY</CustomLink>
                 </li>
-                <li>
-                    <CustomLink to='/completed' className='NavLinks'>COMPLETED</CustomLink>
-                </li>
-                <li>
-                    <CustomLink to='/important' className='NavLinks'>IMPORTANT</CustomLink>
-                </li>
             </ul>
 
         </nav>
