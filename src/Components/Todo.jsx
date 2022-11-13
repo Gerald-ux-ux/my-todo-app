@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// import {sendRequest} from '../today'
+
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,13 +11,13 @@ import {
 
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask, setResponse, sendRequest }) => {
 
-  const navigate = useNavigate({setResponse});
+  const navigate = useNavigate({ setResponse });
   const afterClick = () => {
     navigate("/important")
-   sendRequest().then(setResponse)
+    sendRequest().then(setResponse)
   }
-  
-  
+
+
   return (
     <>
       {toDo && toDo

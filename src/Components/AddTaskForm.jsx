@@ -13,7 +13,7 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
         onChange={(e) => setNewTask(e.target.value)}
       />
       <div className="btn">
-        <button
+        <button 
           onClick={addTask}
         >Add Your Task</button>
       </div>

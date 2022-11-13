@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Important = (response) => {
+const Important = ({response}) => {
   return (
     <div>
       Important

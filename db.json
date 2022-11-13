@@ -8,11 +8,18 @@
     {
       "id": 2,
       "title": "Love",
-      "status": false
+      "important": false,
+      "completed": false
     },
     {
       "id": 3,
       "title": "Love",
+      "important": false,
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Wife",
       "status": false
     }
   ]
