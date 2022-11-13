@@ -84,6 +84,7 @@ const Today = () => {
       })
 
   }
+  
 
   const updateTask = () => {
     let filterRecords = [...toDo].filter(task => task.id !== updateData.id);
