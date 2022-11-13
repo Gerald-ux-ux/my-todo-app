@@ -105,7 +105,7 @@ body {
   display: flex;
   font-size:  1.4rem;
   left: 25%;
-  bottom: 50%;
+  bottom: 100%;
 }
 
 .display{
@@ -116,10 +116,10 @@ body {
 
 }
 
-.btn{
+/* .btn{
   display: flex;
   text-align: center;
-}
+} */
 
 .row{
   position: absolute;
