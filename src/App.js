@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Today from './Components/Today';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <div className="App">
