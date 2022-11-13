@@ -1,13 +1,14 @@
 import React from 'react';
+import AddTaskForm from './AddTaskForm';
 
 
 const Today = ({ newTask, setNewTask, addTask }) => {
-    return(
+  return (
 
-      <form>
-        
-      </form>
-    )
-  }
-  
-  export default Today;
+    <div>
+      <AddTaskForm />
+    </div>
+  )
+}
+
+export default Today;
