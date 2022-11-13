@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 
-const ToDo = ({ toDo, markDone, setUpdateData, deleteTask, setResponse, sendRequest }) => {
+const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
 
   const navigate = useNavigate();
   const afterClick = () => {
