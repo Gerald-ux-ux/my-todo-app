@@ -4,28 +4,7 @@
       "title": "Get a gift for Valentines",
       "important": false,
       "completed": false
-    },
-    {
-      "id": 2,
-      "title": "Love",
-      "important": false,
-      "completed": false
-    },
-    {
-      "id": 3,
-      "title": "Love",
-      "important": false,
-      "completed": false
-    },
-    {
-      "id": 4,
-      "title": "Wife",
-      "status": false
-    },
-    {
-      "id": 5,
-      "title": "Get bro a gift kesho ",
-      "status": false
     }
+
   ]
 }

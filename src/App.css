@@ -131,7 +131,7 @@ body {
 
 
 .taskBg {
-  background-color: rgb(136, 136, 141);
+  background-color: rgba(60, 64, 70, 0.247);
   border-radius: 6px;
   margin-bottom: 20px;
   padding: 10px 140px 10px 15px;
@@ -141,8 +141,8 @@ body {
 }
 
 .taskNumber {
-  color: rgba(5, 3, 1, 0.411);
-  border: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 247, 247);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
   width: 26px;
   height: 26px;
@@ -155,7 +155,7 @@ body {
 }
 .taskBg .taskText {
   flex: 1;
-  color: rgb(24, 11, 11);
+  color: rgb(253, 253, 253);
 }
 
 .taskBg .done .taskText {
@@ -176,11 +176,11 @@ body {
   display: inline-block;
   margin: 0px 10px 0 10px;
   cursor: pointer;
-  color: #2e1212;
+  color: #020202;
 }
 
 .taskBg .iconsWrap span:hover {
-  color: rgb(226, 226, 142);
+  color: rgb(221, 221, 92);
 }
 
 .mr-20 {
