@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Today from './Components/Today';
-// import Important from './Components/Important';
-// import Completed from './Components/Completed';
+import Important from './Components/Important';
+import Completed from './Components/Completed';
 
 function App() {
 
@@ -23,8 +23,8 @@ const [response, setResponse] = useState({});
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/today" element={<Today setResponse={setResponse}/>} />
-            {/* <Route path="/important" element={<Important response={response}  />} />
-            <Route path="/completed" element={<Completed />} /> */}
+            <Route path="/important" element={<Important response={response}  />} />
+            <Route path="/completed" element={<Completed />} />
           </Routes>
         </div>
       </>
