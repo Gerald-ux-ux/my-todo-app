@@ -1,21 +1,14 @@
 import React from 'react';
-
-
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCircleCheck, faPen, faTrashCan, faStar
 } from '@fortawesome/free-solid-svg-icons'
 
-
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
 
- 
   const afterClick = () => {
     alert("important")
   }
-
 
   return (
     <>
