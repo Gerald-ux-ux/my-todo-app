@@ -6,6 +6,7 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
       <div className="row">
         <div className="col">
           <input 
+            className="form-control form-control-lg"
             type="text"
             placeholder='Add a task'
             autoComplete='true'
@@ -15,9 +16,10 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
             onChange={(e) => setNewTask(e.target.value)}
           />
         </div>
-        <div className="btn">
-          <button
+        <div className="col-auto">
+          <button 
             onClick={addTask}
+            className="btn btn-lg btn-success"
           >Add Your Task</button>
         </div>
       </div>
