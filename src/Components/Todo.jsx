@@ -11,7 +11,7 @@ import {
 
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
 
-  const navigate = useNavigate();
+ 
   const afterClick = () => {
     alert("important")
   }
