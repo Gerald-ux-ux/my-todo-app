@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  App {
+    text-align: center;
+  }
+  
+
+  
+  
+  
+  .hse{
+    margin-left:0.2rem ;
+    font-size: 1.6rem;
+  }
+  
+ 
+  
+  .row{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: absolute;
+    color: bisque;
+    display: flex;
+    font-size:  1.4rem;
+    left: 25%;
+    bottom: 100%;
+  }
+  
+  .display{
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    bottom: 50%;
+  
+  }
+  

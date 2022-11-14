@@ -44,18 +44,14 @@ const Today = () => {
     fetch(`http://localhost:3001/tasks${id}`, {
       method: 'DELETE'
     })
-      .then(res => res.json())
-      .then(newTasks => {
+      .then(res => res.json)
+      .then(data => {
         setToDo(newTasks);
-        window.location.reload();
-      })
+      }
+      )
+      
+      
   }
-
-
-
-
-
-
   const markDone = (id) => {
     let newTask = toDo.map(task => {
       if (task.id === id) {
@@ -102,7 +98,11 @@ const Today = () => {
 
 
   return (
+
     <div className='display'>
+      <br></br>
+      <h1>Today</h1>
+      <br></br>
       {updateData && updateData ? (
         <UpdateForm 
           updateData={updateData}

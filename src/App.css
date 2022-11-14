@@ -1,35 +1,82 @@
-/* @media screen and (max-width: 600px) {
-  .NavbarItems a:not(:first-child) {display: none;}
-  .NavbarItems a.icon {
-    float: right;
-    display: block;
-  }
-}
- */
+body {
+  background-color: rgb(34, 33, 33);
+  color: #fff;
+  /*background-image: url(../todo_photo.jpeg);*/
+  background-size: cover;
 
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-App {
+.App {
   text-align: center;
 }
 
-body {
-  /* background-color: rgb(255, 255, 255); */
-  /* color: #fff; */
-  background-image: url(../public/sava-bobov-AYmUgOqRoGA-unsplash.jpg);
-  max-width: 100%;
-  display: block;
-  height: 100%;
-  min-height: 100vh;
-  background-size: cover;
-  
+.taskBg {
+  background-color: rgb(67, 69, 72);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber {
+  color: rgb(152, 143, 143);
+  border: 1px solid rgb(150, 145, 145);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+  color : rgb(230, 12, 12);
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: #00ff89;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+
+.mr-20 {
+  margin-right: 20px; 
+}
+
+
+
+
+
 
 .NavbarItems{
   display: flex;
@@ -55,11 +102,6 @@ body {
   cursor: pointer;
 }
 
-.hse{
-  margin-left:0.2rem ;
-  font-size: 1.6rem;
-}
-
 .NavMenu{
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -83,7 +125,7 @@ body {
 .NavLinks:hover{
   background: rgb(110, 94, 94);
   border-radius: 15px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.275s ease-in-out;
 }
 
 .text{
@@ -95,99 +137,19 @@ body {
   font-size:  1.4rem;
   left: 25%;
   bottom: 50%;
+}  
+
+ body {
+ 
+  background-image: url(../public/sava-bobov-AYmUgOqRoGA-unsplash.jpg);
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
 }
 
-.row{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  position: absolute;
-  color: bisque;
-  display: flex;
-  font-size:  1.4rem;
-  left: 25%;
-  bottom: 100%;
-}
+  
 
-.display{
-  text-align: center;
-  position: absolute;
-  left: 25%;
-  bottom: 50%;
-
-}
-
-/* .btn{
-  display: flex;
-  text-align: center;
-} */
-
-/* .row{
-  position: absolute;
-  display: flex;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  border-radius: 15px;
-} */
-
-
-.taskBg {
-  background-color: rgba(60, 64, 70, 0.247);
-  border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 10px 140px 10px 15px;
-  text-align: left;
-  font-size: 22px;
-  position: relative;
-}
-
-.taskNumber {
-  color: rgb(255, 247, 247);
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
-  display: flex;
-  text-align: center;
-  font-size: 14px;
-  margin-right: 8px;
-  align-items: center;
-  justify-content: center;
-}
-.taskBg .taskText {
-  flex: 1;
-  color: rgb(253, 253, 253);
-}
-
-.taskBg .done .taskText {
-  text-decoration: line-through;
-  opacity: 0.3;
-}
-
-.taskBg .iconsWrap {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
-  width: auto;
-  display: inline-block;
-}
-
-.taskBg .iconsWrap span {
-  display: inline-block;
-  margin: 0px 10px 0 10px;
-  cursor: pointer;
-  color: #020202;
-}
-
-.taskBg .iconsWrap span:hover {
-  color: rgb(221, 221, 92);
-}
-
-.mr-20 {
-  margin-right: 20px;
-}
-
-.taskBg div {
-  display: flex;
-  align-items: center;
-}
