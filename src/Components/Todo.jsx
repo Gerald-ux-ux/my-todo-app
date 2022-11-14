@@ -7,7 +7,7 @@ import {
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
 
   const afterClick = () => {
-    alert("important")
+    alert("You Marked As Important")
   }
 
   return (

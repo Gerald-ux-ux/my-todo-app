@@ -6,7 +6,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 const Navbar = () => {
     return (
         <nav className='NavbarItems'>
-            <h3 className='logo'>TODO APP <i class="fa-solid fa-list"></i></h3>
+            <h3 className='logo'>TODO APP<i class="fa-solid fa-list"></i></h3>
             <ul className='NavMenu'>
                 <li >
                     <CustomLink to='/home' className='NavLinks'>HOME</CustomLink>
