@@ -99,7 +99,7 @@ const Today = () => {
   return (
     <div className='display'>
       <br></br>
-      <h1>Today</h1>
+      <h2 className='component'>Today</h2>
       <br></br>
       {updateData && updateData ? (
         <UpdateForm 

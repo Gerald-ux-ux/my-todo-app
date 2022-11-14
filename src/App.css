@@ -167,3 +167,9 @@ body {
   top: 25%;
   bottom: 50%;
 }
+
+.component{
+  color: bisque;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
