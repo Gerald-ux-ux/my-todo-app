@@ -13,7 +13,6 @@ const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
   return (
     <>
       {toDo && toDo
-        .sort((a, b) => a.id > b.id ? 1 : -1)
         .map((task, index) => {
           return (
             <React.Fragment key={task.id}>

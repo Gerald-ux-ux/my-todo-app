@@ -18,9 +18,10 @@ const Today = () => {
   }, []);
 
   const addTask = () => {
-    if (newTask) {
+    window.location.reload();
+    if (newTask) { 
       let num = toDo.length + 1;
-      let newEntry = { id: num, title: newTask, status: false }
+      let newEntry = { id: num, title: newTask }
 
       fetch('http://localhost:9292/todo_lists', {
         method: 'POST',
@@ -41,7 +42,7 @@ const Today = () => {
   const deleteTask = (id) => {
     let newTasks = toDo.filter(task => task.id !== id)
 
-    fetch(`http://localhost:9292/todo_lists${id}`, {
+    fetch(`http://localhost:9292/todo_lists/ ${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json)
@@ -72,7 +73,7 @@ const Today = () => {
       status: updateData.status ? true : false
     }
 
-    fetch(`http://localhost:9292/todo_lists${updateData.id}`, {
+    fetch(`http://localhost:9292/todo_lists/ ${updateData.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -83,7 +84,6 @@ const Today = () => {
       .then(data => {
         setUpdateData(data);
       })
-
   }
   
 
