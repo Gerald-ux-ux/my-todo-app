@@ -50,7 +50,6 @@ const Today = () => {
       }
       )
       
-      
   }
   const markDone = (id) => {
     let newTask = toDo.map(task => {
