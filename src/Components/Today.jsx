@@ -12,7 +12,7 @@ const Today = () => {
   const [updateData, setUpdateData] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3001/tasks')
+    fetch('http://localhost:9292/todo_lists')
       .then(res => res.json())
       .then(data => { setToDo(data); })
   }, []);
@@ -22,7 +22,7 @@ const Today = () => {
       let num = toDo.length + 1;
       let newEntry = { id: num, title: newTask, status: false }
 
-      fetch('http://localhost:3001/tasks', {
+      fetch('http://localhost:9292/todo_lists', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ const Today = () => {
   const deleteTask = (id) => {
     let newTasks = toDo.filter(task => task.id !== id)
 
-    fetch(`http://localhost:3001/tasks${id}`, {
+    fetch(`http://localhost:9292/todo_lists${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json)
@@ -72,7 +72,7 @@ const Today = () => {
       status: updateData.status ? true : false
     }
 
-    fetch(`http://localhost:3001/tasks${updateData.id}`, {
+    fetch(`http://localhost:9292/todo_lists${updateData.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -97,7 +97,6 @@ const Today = () => {
 
 
   return (
-
     <div className='display'>
       <br></br>
       <h1>Today</h1>
