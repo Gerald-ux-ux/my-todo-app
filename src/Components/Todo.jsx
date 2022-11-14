@@ -3,13 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faCircleCheck, faPen, faTrashCan, faStar
 } from '@fortawesome/free-solid-svg-icons'
+import { Alert } from 'react-bootstrap';
 
 const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
 
   const afterClick = () => {
     alert("You Marked As Important")
   }
-
   return (
     <>
       {toDo && toDo
