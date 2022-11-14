@@ -4,8 +4,6 @@ import ToDo from './Todo';
 import AddTaskForm from './AddTaskForm';
 import UpdateForm from './UpdateForm';
 
-
-
 const Today = () => {
   const [toDo, setToDo] = useState([]);
   const [newTask, setNewTask] = useState('');
@@ -16,13 +14,11 @@ const Today = () => {
       .then(res => res.json())
       .then(data => { setToDo(data); })
   }, []);
-
   const addTask = () => {
     window.location.reload();
-    if (newTask) { 
+    if (newTask) {
       let num = toDo.length + 1;
       let newEntry = { id: num, title: newTask }
-
       fetch('http://localhost:9292/todo_lists', {
         method: 'POST',
         headers: {
@@ -35,10 +31,8 @@ const Today = () => {
           setToDo([...toDo, data]);
           setNewTask('');
         })
-
     }
   }
-
   const deleteTask = (id) => {
     let newTasks = toDo.filter(task => task.id !== id)
 
@@ -50,7 +44,6 @@ const Today = () => {
         setToDo(newTasks);
       }
       )
-      
   }
   const markDone = (id) => {
     let newTask = toDo.map(task => {
@@ -61,18 +54,15 @@ const Today = () => {
     })
     setToDo(newTask);
   }
-
   const cancelUpdate = () => {
     setUpdateData('');
   }
-
   const changeTask = (e) => {
     let newEntry = {
       id: updateData.id,
       title: e.target.value,
       status: updateData.status ? true : false
     }
-
     fetch(`http://localhost:9292/todo_lists/ ${updateData.id}`, {
       method: 'PUT',
       headers: {
@@ -85,7 +75,6 @@ const Today = () => {
         setUpdateData(data);
       })
   }
-  
 
   const updateTask = () => {
     let filterRecords = [...toDo].filter(task => task.id !== updateData.id);
@@ -93,29 +82,26 @@ const Today = () => {
     setToDo(updatedObject);
     setUpdateData('');
   }
-
-
-
   return (
     <div className='display'>
       <br></br>
       <h2 className='component'>Today</h2>
       <br></br>
       {updateData && updateData ? (
-        <UpdateForm 
+        <UpdateForm
           updateData={updateData}
           changeTask={changeTask}
           updateTask={updateTask}
           cancelUpdate={cancelUpdate}
         />
       ) : (
-        <AddTaskForm 
+        <AddTaskForm
           newTask={newTask}
           setNewTask={setNewTask}
           addTask={addTask}
         />
       )}
-      <ToDo 
+      <ToDo
         toDo={toDo}
         markDone={markDone}
         setUpdateData={setUpdateData}
