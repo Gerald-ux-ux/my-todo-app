@@ -1,24 +1,3 @@
 {
-  "tasks": [
-    {
-      "title": "Get a gift for Valentines",
-      "important": false,
-      "completed": false
-    },
-    {
-      "id": 2,
-      "title": "jnjk",
-      "status": false
-    },
-    {
-      "id": 3,
-      "title": "Love mme ",
-      "status": false
-    },
-    {
-      "id": 4,
-      "title": "Low life ",
-      "status": false
-    }
-  ]
+  "tasks": []
 }
